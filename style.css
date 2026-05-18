@@ -17,6 +17,7 @@
     height: 70px;
     padding: 10px 20px;
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* background-color:gold; */
 }
 
@@ -60,7 +61,7 @@ input:focus {
     height: 100%;
 }
 
-.headerIcons i{
+.headerIcons i {
     width: 100%;
     height: 100%;
     display: flex;
@@ -68,29 +69,80 @@ input:focus {
     justify-content: center;
 }
 
-.headerIcons i:hover{
+.headerIcons i:hover {
     border-radius: 5px;
     background-color: #F0F2F5;
-    border-bottom: 5px solid blue ;
+    border-bottom: 5px solid blue;
 }
 
-.headerRight{
+.headerRight {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
 
-.headerRightIcons{
+.headerRightIcons {
     width: 40px;
     height: 40px;
-    border-radius: 50%;    
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e9edf3;
 }
 
-.headerRightIcons i{
+.headerRightIcons i {
     font-size: 17px;
+}
+
+.contanir {
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.MainLeftSlidebar {
+    overflow: scroll;
+    /* flex-grow: 1; */
+    padding: 0px 10px;
+    padding-top: 25px;
+    width: 25%;
+    background-color: #F2F4F7;
+}
+
+.MainSlidebarioncs p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.MainSlidebarioncs p:hover{
+    background-color: #E6E8EA;
+    border-radius: 10px;
+}
+
+.MainSlidebarioncs i{
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+.MainCenterPost {
+    /* flex-grow: 2; */
+    width: 50%;
+    /* background-color: chartreuse; */
+}
+
+.MainRightSlidebar {
+    background-color: chartreuse;
+    width: 25%;
 }
