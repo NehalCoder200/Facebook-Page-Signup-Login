@@ -99,6 +99,7 @@ input:focus {
 .contanir {
     height: calc(100vh - 70px);
     display: flex;
+    background-color: #F2F4F7;
 }
 
 .MainLeftSlidebar {
@@ -110,7 +111,7 @@ input:focus {
     background-color: #F2F4F7;
 }
 
-.MainSlidebarioncs p{
+.MainSlidebarioncs p {
     font-size: 20px;
     margin-bottom: 10px;
     padding: 10px;
@@ -119,19 +120,15 @@ input:focus {
     /* background-color: blue; */
 }
 
-.MainSlidebarioncs p:hover{
+.MainSlidebarioncs p:hover {
     background-color: #E6E8EA;
     border-radius: 10px;
 }
 
-.MainSlidebarioncs i{
+.MainSlidebarioncs i {
     font-size: 22px;
     margin-right: 15px;
 }
-
-
-
-
 
 
 
@@ -141,6 +138,56 @@ input:focus {
     width: 50%;
     /* background-color: chartreuse; */
 }
+
+
+.MainCenterPost {
+    margin: 0px 20px;
+    margin-top: 17px;
+    /* background-color: teal */
+}
+
+
+.postHeader {
+    border-radius: 10px;
+    padding: 14px 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.postHeader i {
+    font-size: 24px;
+}
+
+
+.postHeaderInput {
+    flex-grow: 2;
+}
+
+.postHeaderInput input{
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 10px;
+    padding-left: 15px;
+    /* margin-left: 10px; */
+    border: none;
+    border-radius: 15px;
+    background-color: #F0F2F5;
+}
+
+.postHeaderIcons i{
+    margin-right: 5px;
+
+}
+
+
+
+
+
+
 
 .MainRightSlidebar {
     background-color: chartreuse;
