@@ -85,7 +85,7 @@ function formHandler(event) {
 
 
     setTimeout(()=>{
-        window.location.href = 'login.html'
+        window.location.href = './Pages/login.html'
     },1500)
 
     form.reset()

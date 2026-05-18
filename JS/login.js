@@ -65,7 +65,7 @@ function formHandler() {
         
 
             setTimeout(() => {
-                window.location.href = '../index.html'
+                window.location.href = '../Pages/Dashboard.html'
             }, 1500)
 
             form.reset()

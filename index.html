@@ -4,118 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <title>Sign Page</title>
+    <link rel="stylesheet" href="./Style/signup.css">
+    <!-- <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css"> -->
 </head>
 
 <body>
 
-    <!-- Header -->
-
-    <div class="header">
-
-        <div class="headerLeft">
-
-            <img src="data:image/png;base64,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"
-                alt="facebook" width="" height="40px">
-
-            <div class="headerInput">
-
-                <input type="text" placeholder="Search Facebook">
+    <div class="signForm">
+        <div class="sign-page">
+            <div class="sign_content">
+                <h2>Create a new account</h2>
+                <p>It's quick and easy.</p>
             </div>
+
+            <form id="form">
+                <div class="inputs">
+                    <input type="text" placeholder="First name" id="firstname">
+                    <input type="text" placeholder="Surname" id="lastname">
+                </div>
+
+                <div class="dob">
+                    Date of birth
+                </div>
+                <div class="date_of_birth">
+                    <select id="date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="17">16</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">1</option>
+                        <option value="22">21</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+                    <select name="month" id="month">
+                        <option value="January">Jan</option>
+                        <option value="February" selected>Feb</option>
+                        <option value="March">Mar</option>
+                        <option value="April">Apr</option>
+                        <option value="May">May</option>
+                        <option value="June">Jun</option>
+                        <option value="July">Jul</option>
+                        <option value="August">Aug</option>
+                        <option value="September">Sep</option>
+                        <option value="October">Oct</option>
+                        <option value="November">Nov</option>
+                        <option value="December">Dec</option>
+                    </select>
+
+                    <select name="year" id="year">
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026" selected>2026</option>
+                    </select>
+                </div>
+
+                <div class="gender">
+                    Gender
+                </div>
+
+                <div class="genderValue">
+                    <div>
+                        <label for="f">Female</label>
+                        <input type="radio" id="f" name="gender" value="female">
+                    </div>
+
+                    <div>
+                        <label for="m">Male</label>
+                        <input type="radio" id="m" name="gender" checked  value="male" >
+                    </div>
+
+                    <div>
+                        <label for="c">Custom</label>
+                        <input type="radio" id="c" name="gender" value="custom">
+                    </div>
+                </div>
+
+                <div class="input_email">
+                    <div>
+                        <input type="email tel" placeholder="Mobile number or email address" id="email">
+                        <input type="password" placeholder="password" id="password">
+                    </div>
+                </div>
+
+                <span>
+                    <p>People who use our service may have uploaded your contact information to Facebook. Learn more.
+                    </p>
+                </span>
+
+                <span>
+                    <p>By clicking Sign up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive
+                        SMS notifications from us and can opt out at any time.</p>
+                </span>
+
+                <div class="signBtn">
+                    <button id="signup">Sign up</button>
+                    <!-- <p><a href="#">Already have an account?</a></p> -->
+                </div>
+
+                <div class="alreadlogin">
+                    <button><a href="./Pages/login.html">I already have an account</a></button>
+                </div>
+
+            </form>
+
 
         </div>
-
-        <div class="headerCenter">
-
-            <div class="headerIcons">
-                <i class="fa-solid fa-house"></i>
-            </div>
-
-            <div class="headerIcons">
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-
-
-            <div class="headerIcons">
-                <i class="fa-brands fa-itch-io"></i>
-            </div>
-
-
-            <div class="headerIcons">
-                <i class="fa-solid fa-users"></i>
-            </div>
-
-
-            <div class="headerIcons">
-                <i class="fa-solid fa-gamepad"></i>
-            </div>
-
-
-        </div>
-
-        <div class="headerRight">
-
-            <div class="headerRightIcons">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <div class="headerRightIcons">
-                <i class="fa-brands fa-facebook-messenger"></i>
-            </div>
-
-
-            <div class="headerRightIcons">
-                <i class="fa-solid fa-bell"></i>
-            </div>
-
-
-            <div class="headerRightIcons">
-                <i class="fa-regular fa-circle-user"></i>
-            </div>
-
-        </div>
-
     </div>
 
-    <!-- Main -->
-
-    <div class="contanir">
-
-        <!-- Left Slider -->
-
-        <div class="MainLeftSlidebar">
-            <div class="MainSlidebarioncs">
-
-                <p><i class="fa-solid fa-circle-user"></i>Nehal Coder 200</p>
-                <p><i class="fa-brands fa-meta"></i>Meta AI</p>
-                <p><i class="fa-solid fa-user-group"></i>Friends</p>
-                <p><i class="fa-solid fa-file"></i>Pages</p>
-                <p><i class="fa-solid fa-people-roof"></i>Group</p>
-                <p><i class="fa-solid fa-clock-rotate-left"></i>Memories</p>
-                <p><i class="fa-regular fa-bookmark"></i>Saved</p>
-                <p><i class="fa-solid fa-clapperboard"></i>Reels</p>
-                <p><i class="fa-solid fa-chart-simple"></i>Ads Manager</p>
-                <p><i class="fa-solid fa-gift"></i>Brithdays</p>
-                <p><i class="fa-regular fa-comment"></i>Chat with Als</p>
-
-
-
-
-            </div>
-        </div>
-
-
-
-        <div class="MainCenterPost"></div>
-        <div class="MainRightSlidebar"></div>
-
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/signup.js"></script>
 </body>
 
 </html>
